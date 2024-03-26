@@ -1,0 +1,43 @@
+[ {
+  "candidateId" : 1,
+  "candidateName" : "rahul",
+  "candidateAddress" : "test",
+  "candidateAge" : 35,
+  "candidateFatherName" : "raju",
+  "candidateDob" : "15-12-2000",
+  "candidateSkills" : "c,c++",
+  "candidateContact" : 9875643215,
+  "candidateEmail" : "rajuk@yahoo.com",
+  "isExperienced" : false,
+  "yearOfExeperience" : 0,
+  "isAppointed" : false,
+  "appointedOn" : null
+}, {
+  "candidateId" : 2,
+  "candidateName" : "arul",
+  "candidateAddress" : "TVL",
+  "candidateAge" : 25,
+  "candidateFatherName" : "ArulAmar",
+  "candidateDob" : "20-05-1998",
+  "candidateSkills" : "C,C++,JAva",
+  "candidateContact" : 9498850123,
+  "candidateEmail" : "arul@gmail.com",
+  "isExperienced" : true,
+  "yearOfExeperience" : 1,
+  "isAppointed" : false,
+  "appointedOn" : null
+}, {
+  "candidateId" : 3,
+  "candidateName" : "sakthi",
+  "candidateAddress" : "Tenkasi",
+  "candidateAge" : 23,
+  "candidateFatherName" : "sakthi",
+  "candidateDob" : "29-12-2000",
+  "candidateSkills" : "JAVA",
+  "candidateContact" : 9784561236,
+  "candidateEmail" : "sakthi@gmail.com",
+  "isExperienced" : false,
+  "yearOfExeperience" : 0,
+  "isAppointed" : false,
+  "appointedOn" : null
+} ]

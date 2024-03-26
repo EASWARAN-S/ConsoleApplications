@@ -1,0 +1,51 @@
+[ {
+  "userId" : 1,
+  "userName" : "abc",
+  "password" : "abc",
+  "userType" : 1
+}, {
+  "userId" : 2,
+  "userName" : "abc",
+  "password" : "abc",
+  "userType" : 2
+}, {
+  "userId" : 3,
+  "userName" : "ravi",
+  "password" : "ravi@",
+  "userType" : 2
+}, {
+  "userId" : 1,
+  "userName" : "rajuk",
+  "password" : "rajuk",
+  "userType" : 4
+}, {
+  "userId" : 4,
+  "userName" : "sara",
+  "password" : "sara",
+  "userType" : 2
+}, {
+  "userId" : 5,
+  "userName" : "raki",
+  "password" : "raki",
+  "userType" : 2
+}, {
+  "userId" : 6,
+  "userName" : "arun",
+  "password" : "arun",
+  "userType" : 2
+}, {
+  "userId" : 7,
+  "userName" : "ahaz",
+  "password" : "ahaz",
+  "userType" : 2
+}, {
+  "userId" : 2,
+  "userName" : "arul",
+  "password" : "arul",
+  "userType" : 4
+}, {
+  "userId" : 3,
+  "userName" : "sakthi",
+  "password" : "sakthi",
+  "userType" : 4
+} ]

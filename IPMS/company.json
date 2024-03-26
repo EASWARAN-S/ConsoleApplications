@@ -1,0 +1,26 @@
+[ {
+  "companyId" : 1,
+  "companyName" : "Zoho",
+  "companyAddress" : "Tvl",
+  "companyStatus" : 1
+}, {
+  "companyId" : 2,
+  "companyName" : "TCS",
+  "companyAddress" : "Chennai",
+  "companyStatus" : 1
+}, {
+  "companyId" : 3,
+  "companyName" : "TVK",
+  "companyAddress" : "sfskf",
+  "companyStatus" : 1
+}, {
+  "companyId" : 4,
+  "companyName" : "TVL E Sevai",
+  "companyAddress" : "TVL",
+  "companyStatus" : 1
+}, {
+  "companyId" : 5,
+  "companyName" : "cts",
+  "companyAddress" : "chennai",
+  "companyStatus" : 1
+} ]

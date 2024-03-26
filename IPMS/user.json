@@ -1,0 +1,71 @@
+[ {
+  "userId" : 1,
+  "userName" : "Easwaran S",
+  "userAddress" : "TVL",
+  "userEmail" : "seaswaran007@gmail.com",
+  "userMobile" : 9498850906,
+  "userDesignation" : "Developer",
+  "userDoj" : "1-12-2002",
+  "userCompanyId" : 1,
+  "userType" : 1
+}, {
+  "userId" : 2,
+  "userName" : "easwar",
+  "userAddress" : "TVL",
+  "userEmail" : "seaswaran008@gmail.com",
+  "userMobile" : 9498850909,
+  "userDesignation" : "Developer",
+  "userDoj" : "1-12-2003",
+  "userCompanyId" : 1,
+  "userType" : 2
+}, {
+  "userId" : 3,
+  "userName" : "Ravi",
+  "userAddress" : "tirupathi ",
+  "userEmail" : "ravi@gmail.com",
+  "userMobile" : 9498556123,
+  "userDesignation" : "Devops",
+  "userDoj" : "1-12-22025",
+  "userCompanyId" : 2,
+  "userType" : 2
+}, {
+  "userId" : 4,
+  "userName" : "saravanan",
+  "userAddress" : "tvl",
+  "userEmail" : "sara@gmail.com",
+  "userMobile" : 9052612345,
+  "userDesignation" : "developer",
+  "userDoj" : "01-12-2023",
+  "userCompanyId" : 1,
+  "userType" : 2
+}, {
+  "userId" : 5,
+  "userName" : "rajul",
+  "userAddress" : "tvl",
+  "userEmail" : "rajul@hotmail.com",
+  "userMobile" : 1234569890,
+  "userDesignation" : "Devops",
+  "userDoj" : "12-12-2022",
+  "userCompanyId" : 3,
+  "userType" : 2
+}, {
+  "userId" : 6,
+  "userName" : "arun",
+  "userAddress" : "tvl",
+  "userEmail" : "arun@gmail.com",
+  "userMobile" : 9498856123,
+  "userDesignation" : "developer",
+  "userDoj" : "12-12-2023",
+  "userCompanyId" : 4,
+  "userType" : 2
+}, {
+  "userId" : 7,
+  "userName" : "ahaz",
+  "userAddress" : "tvl",
+  "userEmail" : "ahaz@myyahoo.com",
+  "userMobile" : 9498850906,
+  "userDesignation" : "Developer",
+  "userDoj" : "25-12-2022",
+  "userCompanyId" : 2,
+  "userType" : 2
+} ]

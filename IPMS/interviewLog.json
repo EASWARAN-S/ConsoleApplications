@@ -1,0 +1,11 @@
+[ {
+  "interviewlogid" : 1,
+  "interviewid" : 1,
+  "candidateid" : 4,
+  "currentstatus" : "Applied"
+}, {
+  "interviewlogid" : 2,
+  "interviewid" : 1,
+  "candidateid" : 3,
+  "currentstatus" : "Applied"
+} ]

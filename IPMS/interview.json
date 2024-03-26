@@ -1,0 +1,9 @@
+[ {
+  "interviewId" : 1,
+  "interviewDate" : "25-05-2024",
+  "interviewtime" : "11:00:00",
+  "companyId" : 1,
+  "interviewRole" : "Developer",
+  "individualScoreLimit" : 600,
+  "noOfInterviewers" : 5
+} ]
