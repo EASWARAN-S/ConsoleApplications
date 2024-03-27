@@ -27,12 +27,15 @@ class LibrarySetupModel {
 	public boolean isEmailAlreadyExists(String email) {
 		boolean isEmail = false;
 		getLibrary();
-		if (libraryList.size() == 0)
+		if (LibraryDatabase.getInstance().readLibrary() == null)
 			isEmail = true;
-		for (int i = 0; i < libraryList.size(); i++) {
-			if (libraryList.get(i).getEmailId().equals(email.toLowerCase()))
-				isEmail = true;
+		else {
+			for (int i = 0; i < libraryList.size(); i++) {
+				if (libraryList.get(i).getEmailId().equals(email.toLowerCase()))
+					isEmail = true;
+			}
 		}
+
 		return isEmail;
 	}
 
