@@ -1,5 +1,7 @@
 package com.easwaran2506.librarySetup;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import com.easwaran2506.model.*;
@@ -24,10 +26,10 @@ public class LibrarySetupView {
                 showAlert("Thank for you using LIBMS...");
                 break;
             case 1:
-                initiateSetup();
+                initiateSetup(userId, userType);
                 break;
             case 2:
-                showLibraryDetails();
+                showLibraryDetails(userId, userType);
 
                 break;
             case 3:
@@ -47,7 +49,7 @@ public class LibrarySetupView {
         System.out.println(alert);
     }
 
-    public void initiateSetup() {
+    public void initiateSetup(int userId, int userType) {
         System.out.println("\n Enter the Library Name");
         String libName = sc.nextLine();
         System.out.println("\n Enter the Library email id ");
@@ -59,10 +61,20 @@ public class LibrarySetupView {
         System.out.println("\n Enter the Library Address");
         String libAddr = sc.nextLine();
         librarySetupModel.addLibrary(libName, libEmail, libAddr, libIncharge, libMobile);
-
+        init(userId, userType);
     }
 
-    public void showLibraryDetails() {
-
+    public void showLibraryDetails(int userId, int userType) {
+        System.out.println("Library Informations...");
+        System.out.printf("%-25s%-25s%-25s%-25s%-25s\n", "Library Name", "Library Address", "Librarian Name",
+                "Library Email Id", "Library Mobile Number");
+        List<Library> libraryList = new ArrayList<>();
+        libraryList = librarySetupModel.getLibrary();
+        for (int i = 0; i < libraryList.size(); i++) {
+            System.out.printf("%-25s%-25s%-25s%-25s%-25s\n", libraryList.get(i).getLibraryName(),
+                    libraryList.get(i).getLibraryAddress(), libraryList.get(i).getLibraryInchargeName(),
+                    libraryList.get(i).getEmailId(), libraryList.get(i).getPhoneNo());
+        }
+        init(userId, userType);
     }
 }

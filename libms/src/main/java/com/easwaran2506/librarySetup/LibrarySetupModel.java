@@ -26,8 +26,7 @@ class LibrarySetupModel {
 
 	public boolean isEmailAlreadyExists(String email) {
 		boolean isEmail = false;
-		getLibrary();
-		if (LibraryDatabase.getInstance().readLibrary() == null)
+		if (libraryList.isEmpty())
 			isEmail = true;
 		else {
 			for (int i = 0; i < libraryList.size(); i++) {
@@ -56,16 +55,22 @@ class LibrarySetupModel {
 	}
 
 	public void addLibrary(String libName, String libEmail, String libAddr, String libIncharge, String libMobile) {
-		libraryList = getLibrary();
+
 		setlibraryId();
 		if (isValidEmail(libEmail)) {
-			if (isEmailAlreadyExists(libEmail)) {
+			if (!isEmailAlreadyExists(libEmail)) {
 				Library library = new Library();
 				library.setLibraryId(libraryId);
 				library.setLibraryActiveStatus(1);
+				library.setEmailId(libEmail);
+				library.setLibraryAddress(libAddr);
+				library.setLibraryInchargeName(libIncharge);
+				library.setLibraryName(libName);
+				library.setPhoneNo(libMobile);
 				libraryList.add(library);
+				LibraryDatabase.getInstance().writeLibrary(libraryList);
 			} else {
-				librarySetupView.showAlert("Library Already exists with this Email Give Unique Email6");
+				librarySetupView.showAlert("Library Already exists with this Email Give Unique Email");
 			}
 		}
 

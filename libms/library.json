@@ -1,0 +1,25 @@
+[ {
+  "libraryId" : 1,
+  "libraryName" : "ZSFS",
+  "libraryAddress" : "TVL",
+  "libraryInchargeName" : "LokeshVarma",
+  "phoneNo" : "9087856523",
+  "emailId" : "zsfslib@gmail.com",
+  "libraryActiveStatus" : 1
+}, {
+  "libraryId" : 2,
+  "libraryName" : "Dsrt Library",
+  "libraryAddress" : "Tvl",
+  "libraryInchargeName" : "Rahul",
+  "phoneNo" : "8875612345",
+  "emailId" : "dsrtlib@gmail.com",
+  "libraryActiveStatus" : 1
+}, {
+  "libraryId" : 3,
+  "libraryName" : "Dsrt Library block1",
+  "libraryAddress" : "Tvl",
+  "libraryInchargeName" : "Rahul",
+  "phoneNo" : "8879456123",
+  "emailId" : "dsrtlib1@dsrt.in",
+  "libraryActiveStatus" : 1
+} ]

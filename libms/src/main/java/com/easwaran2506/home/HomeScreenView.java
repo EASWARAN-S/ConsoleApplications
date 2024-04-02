@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import com.easwaran2506.librarySetup.LibrarySetupView;
 import com.easwaran2506.login.LoginView;
-
+import com.easwaran2506.manageBooks.ManageBooksView;
 import com.easwaran2506.welcomeScreen.WelcomeScreenView;
 
 public class HomeScreenView {
@@ -28,9 +28,8 @@ public class HomeScreenView {
                     librarySetupView.init(userId, userType);
                     break;
                 case 2:
-                    // InterviewView interviewView = new InterviewView();
-                    // interviewView.init(userType, userId);
-
+                    ManageBooksView manageBooksView = new ManageBooksView();
+                    manageBooksView.init(userId, userType);
                     break;
                 case 3:
                     welcomeScreenView.init();
@@ -53,7 +52,8 @@ public class HomeScreenView {
                     loginView.showAlert("Thank for you using LIBMS...");
                     break;
                 case 1:
-
+                    ManageBooksView manageBooksView = new ManageBooksView();
+                    manageBooksView.init(userId, userType);
                     break;
                 case 2:
 

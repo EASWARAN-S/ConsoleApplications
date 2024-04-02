@@ -105,7 +105,7 @@ public class LibraryDatabase {
         }
     }
 
-    public void writeCompany(List Library) {
+    public void writeLibrary(List Library) {
         try {
             File file = new File(filePathLib);
             if (!file.exists()) {
@@ -115,7 +115,7 @@ public class LibraryDatabase {
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
             mapper.writeValue(file, Library);
         } catch (Exception e) {
-            loginView.showAlert("Error Occured in adding Company");
+            loginView.showAlert("Error Occured in adding Library");
         }
     }
 

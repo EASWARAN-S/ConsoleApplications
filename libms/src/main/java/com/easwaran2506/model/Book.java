@@ -4,7 +4,8 @@ public class Book {
     private int bookId;
     private String bookName;
     private String bookCatlogueNumber;
-    private String bookType;
+    private int bookType;
+    /** 1 - Reference 0 not */
     private String bookAuthor;
     private String bookPublisher;
     private int bookStatus;
@@ -39,11 +40,11 @@ public class Book {
         this.bookCatlogueNumber = bookCatlogueNumber;
     }
 
-    public String getBookType() {
+    public int getBookType() {
         return bookType;
     }
 
-    public void setBookType(String bookType) {
+    public void setBookType(int bookType) {
         this.bookType = bookType;
     }
 
