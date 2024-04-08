@@ -2,9 +2,54 @@
   "userId" : 1,
   "libraryId" : 1,
   "name" : "easwaran",
-  "userType" : 2,
+  "userType" : 1,
   "userAddress" : "TVL",
   "email" : "seaswaran007@gmail.com",
+  "mobile" : 9498850906,
+  "userActiveStatus" : 1
+}, {
+  "userId" : 2,
+  "libraryId" : 1,
+  "name" : "Tvl library",
+  "userType" : 2,
+  "userAddress" : "TVL",
+  "email" : "tvllib@gmail.com",
+  "mobile" : 9498856150,
+  "userActiveStatus" : 1
+}, {
+  "userId" : 3,
+  "libraryId" : 1,
+  "name" : "TVK Library",
+  "userType" : 2,
+  "userAddress" : "TVK",
+  "email" : "tvk@gmail.com",
+  "mobile" : 9546612345,
+  "userActiveStatus" : 1
+}, {
+  "userId" : 4,
+  "libraryId" : 1,
+  "name" : "Rakesh",
+  "userType" : 2,
+  "userAddress" : "TVL",
+  "email" : "rakesh@yahoo.com",
+  "mobile" : 9498856510,
+  "userActiveStatus" : 1
+}, {
+  "userId" : 5,
+  "libraryId" : 2,
+  "name" : "arun",
+  "userType" : 2,
+  "userAddress" : "TVL",
+  "email" : "arun@gmail.com",
+  "mobile" : 9488551236,
+  "userActiveStatus" : 1
+}, {
+  "userId" : 6,
+  "libraryId" : 2,
+  "name" : "aravind",
+  "userType" : 2,
+  "userAddress" : "Tvl",
+  "email" : "aravin123@gmail.com",
   "mobile" : 9498850906,
   "userActiveStatus" : 1
 } ]

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import com.easwaran2506.model.Library;
 import com.easwaran2506.welcomeScreen.WelcomeScreenView;
 
 public class UserRegistrationView {
@@ -43,7 +44,19 @@ public class UserRegistrationView {
         System.out.println("Enter your MobileNumber");
         long userMobile = sc.nextLong();
         sc.nextLine();
-        int libraryId = 1;
+        List<Library> libraryList = userRegistrationModel.readLibrary();
+        System.out.println("Choose  the library");
+        String[] libraryName = new String[libraryList.size()];
+        for (int i = 0; i < libraryList.size(); i++) {
+            libraryName[i] = libraryList.get(i).getLibraryName();
+
+        }
+        for (int j = 0; j < libraryName.length; j++) {
+            System.out.println((j + 1) + " . " + libraryName[j]);
+        }
+        System.out.println("Type your choice ");
+        int libraryId = sc.nextInt();
+        sc.nextLine();
 
         if (userRegistrationModel.addUser(userName, userAddress,
                 userMobile, userEmail, libraryId)) {
@@ -55,8 +68,13 @@ public class UserRegistrationView {
             if (!isAdded) {
                 showAlert("Error in adding credentials... please reenter the following");
                 reEnterUserCredentials();
-            } else
-                showAlert("User Added Successfully Please Login");
+            } else {
+                String str = "User " + userName + " Added Successfully Please Login";
+                showAlert(str);
+            }
+
+            WelcomeScreenView welcomeScreenView = new WelcomeScreenView();
+            welcomeScreenView.init();
 
         }
     }

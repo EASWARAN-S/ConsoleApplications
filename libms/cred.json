@@ -3,4 +3,29 @@
   "userName" : "eas",
   "password" : "eas",
   "userType" : 1
+}, {
+  "userId" : 2,
+  "userName" : "Tvl library",
+  "password" : "tkp",
+  "userType" : 2
+}, {
+  "userId" : 3,
+  "userName" : "TVK Library",
+  "password" : "tvk",
+  "userType" : 2
+}, {
+  "userId" : 4,
+  "userName" : "Rakesh",
+  "password" : "rakesh",
+  "userType" : 2
+}, {
+  "userId" : 5,
+  "userName" : "arun",
+  "password" : "arun",
+  "userType" : 2
+}, {
+  "userId" : 6,
+  "userName" : "aravind",
+  "password" : "abc",
+  "userType" : 2
 } ]

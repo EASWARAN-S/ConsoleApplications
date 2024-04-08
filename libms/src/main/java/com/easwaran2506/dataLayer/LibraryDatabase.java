@@ -7,6 +7,7 @@ import java.util.List;
 
 import com.easwaran2506.home.HomeScreenView;
 import com.easwaran2506.login.LoginView;
+import com.easwaran2506.model.Book;
 import com.easwaran2506.model.Credentials;
 import com.easwaran2506.model.Library;
 import com.easwaran2506.model.User;
@@ -31,6 +32,7 @@ public class LibraryDatabase {
     String filePathLib = "library.json";
     String filePathUser = "user.json";
     String filePathCred = "cred.json";
+    String filePathBook = "book.json";
 
     int userType;
     int userId;
@@ -131,6 +133,23 @@ public class LibraryDatabase {
         }
     }
 
+    public User readGivenUser(int userId) {
+        try {
+            User user1 = new User();
+            List<User> userList = new ArrayList<>();
+            ObjectMapper mapper = new ObjectMapper();
+            userList = mapper.readValue(new File(filePathUser), new TypeReference<List<User>>() {
+            });
+            for (User user : userList) {
+                if (user.getUserId() == userId)
+                    user1 = user;
+            }
+            return user1;
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
     public boolean writeUser(List user) {
         try {
             File file = new File(filePathUser);
@@ -187,4 +206,39 @@ public class LibraryDatabase {
         return credList;
     }
 
+    public List<Book> readBooks() {
+        List<Book> bookList = new ArrayList<>();
+        try {
+
+            ObjectMapper mapper = new ObjectMapper();
+            File file = new File(filePathBook);
+            if (file.exists()) {
+
+                bookList = mapper.readValue(new File(filePathBook), new TypeReference<List<Book>>() {
+                });
+            }
+            return bookList;
+
+        } catch (Exception e) {
+            return null;
+        }
+
+    }
+
+    public boolean writeBooks(List<Book> bookList) {
+        try {
+
+            ObjectMapper mapper = new ObjectMapper();
+            File file = new File(filePathBook);
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            mapper.enable(SerializationFeature.INDENT_OUTPUT);
+            mapper.writeValue(file, bookList);
+            return true;
+        } catch (Exception e) {
+            loginView.showAlert("Error Occured while adding Books...");
+            return false;
+        }
+    }
 }

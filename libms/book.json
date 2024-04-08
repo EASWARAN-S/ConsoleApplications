@@ -1,0 +1,53 @@
+[ {
+  "bookId" : 1,
+  "bookName" : "Java ",
+  "bookCatlogueNumber" : "24CSC001",
+  "bookType" : 0,
+  "libId" : 1,
+  "bookAuthor" : "Bala",
+  "bookPublisher" : "Pearson",
+  "bookStatus" : 1,
+  "bookPrice" : 856.0,
+  "isDamaged" : 0,
+  "edition" : "5",
+  "bookCategory" : "CSE"
+}, {
+  "bookId" : 2,
+  "bookName" : "C",
+  "bookCatlogueNumber" : "24CSC002",
+  "bookType" : 0,
+  "libId" : 1,
+  "bookAuthor" : "Bala GuruSamy",
+  "bookPublisher" : "Pearson",
+  "bookStatus" : 1,
+  "bookPrice" : 856.0,
+  "isDamaged" : 0,
+  "edition" : "4",
+  "bookCategory" : "CSE"
+}, {
+  "bookId" : 3,
+  "bookName" : "Java",
+  "bookCatlogueNumber" : "24tKcsc001",
+  "bookType" : 0,
+  "libId" : 1,
+  "bookAuthor" : "GuruSamy",
+  "bookPublisher" : "Pearson",
+  "bookStatus" : 1,
+  "bookPrice" : 859.0,
+  "isDamaged" : 0,
+  "edition" : "4",
+  "bookCategory" : "CSE"
+}, {
+  "bookId" : 4,
+  "bookName" : "JAva",
+  "bookCatlogueNumber" : "23CSC001",
+  "bookType" : 1,
+  "libId" : 2,
+  "bookAuthor" : "bala",
+  "bookPublisher" : "pearson",
+  "bookStatus" : 1,
+  "bookPrice" : 548.0,
+  "isDamaged" : 0,
+  "edition" : "5",
+  "bookCategory" : "cse"
+} ]

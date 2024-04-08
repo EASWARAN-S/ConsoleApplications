@@ -54,7 +54,7 @@ public class UserRegistrationModel {
         user.setUserActiveStatus(1);
         user.setUserType(userType);
         user.setUserAddress(userAddress);
-        user.setLibraryId(1);
+        user.setLibraryId(libraryId);
         user.setUserId(userId);
         userList.add(user);
         return LibraryDatabase.getInstance().writeUser(userList);
@@ -78,6 +78,10 @@ public class UserRegistrationModel {
                 isEmail = true;
         }
         return isEmail;
+    }
+
+    public List<Library> readLibrary() {
+        return LibraryDatabase.getInstance().readLibrary();
     }
 
 }

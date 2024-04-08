@@ -5,6 +5,7 @@ public class Book {
     private String bookName;
     private String bookCatlogueNumber;
     private int bookType;
+    private int libId;
     /** 1 - Reference 0 not */
     private String bookAuthor;
     private String bookPublisher;
@@ -12,9 +13,15 @@ public class Book {
     private double bookPrice;
     private int isDamaged;
     private String edition;
-    private String journer;
-    private int availableCount;
-    private int volume;
+    private String bookCategory;
+
+    public String getBookCategory() {
+        return bookCategory;
+    }
+
+    public void setBookCategory(String bookCategory) {
+        this.bookCategory = bookCategory;
+    }
 
     public int getBookId() {
         return bookId;
@@ -96,28 +103,12 @@ public class Book {
         this.edition = edition;
     }
 
-    public String getJourner() {
-        return journer;
+    public int getLibId() {
+        return libId;
     }
 
-    public void setJourner(String journer) {
-        this.journer = journer;
-    }
-
-    public int getAvailableCount() {
-        return availableCount;
-    }
-
-    public void setAvailableCount(int availableCount) {
-        this.availableCount = availableCount;
-    }
-
-    public int getVolume() {
-        return volume;
-    }
-
-    public void setVolume(int volume) {
-        this.volume = volume;
+    public void setLibId(int libId) {
+        this.libId = libId;
     }
 
 }
