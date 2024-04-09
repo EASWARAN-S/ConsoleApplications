@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.easwaran2506.IPMS.company.CompanyModel;
+import com.easwaran2506.IPMS.home.HomeScreenView;
 import com.easwaran2506.IPMS.login.LoginView;
 import com.easwaran2506.IPMS.model.Company;
 import com.easwaran2506.IPMS.model.Interview;
@@ -53,7 +54,7 @@ public class CandidateView {
             }
 
         }
-        for (int j = 0; j < interViewName.length; j++) {
+        for (int j = 0; j < count; j++) {
             System.out.println((j + 1) + " . " + interViewName[j]);
         }
         System.out.println("Type your choice ");
@@ -62,7 +63,8 @@ public class CandidateView {
         sc.nextLine();
         int interviewId = interId[interview - 1];
         candidateModel.writeInterLog(candidateid, interviewId);
-        init(userType, candidateid);
+        HomeScreenView homeScreenView = new HomeScreenView();
+        homeScreenView.mainMenu(userType, candidateid);
 
     }
 

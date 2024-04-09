@@ -2,10 +2,24 @@
   "interviewlogid" : 1,
   "interviewid" : 1,
   "candidateid" : 4,
-  "currentstatus" : "Applied"
+  "currentStatus" : "Assigned",
+  "currentstatus" : null
 }, {
   "interviewlogid" : 2,
   "interviewid" : 1,
   "candidateid" : 3,
+  "currentStatus" : "Assigned",
+  "currentstatus" : null
+}, {
+  "interviewlogid" : 3,
+  "interviewid" : 1,
+  "candidateid" : 5,
+  "currentStatus" : "Assigned",
+  "currentstatus" : null
+}, {
+  "interviewlogid" : 4,
+  "interviewid" : 1,
+  "candidateid" : 6,
+  "currentStatus" : null,
   "currentstatus" : "Applied"
 } ]

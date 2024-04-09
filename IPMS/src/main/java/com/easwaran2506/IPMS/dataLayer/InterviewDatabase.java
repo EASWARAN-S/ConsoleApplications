@@ -9,10 +9,12 @@ import com.easwaran2506.IPMS.home.HomeScreenView;
 import com.easwaran2506.IPMS.interview.InterviewView;
 import com.easwaran2506.IPMS.login.LoginView;
 import com.easwaran2506.IPMS.model.Candidate;
+import com.easwaran2506.IPMS.model.CandidateRemarks;
 import com.easwaran2506.IPMS.model.Company;
 import com.easwaran2506.IPMS.model.Credentials;
 import com.easwaran2506.IPMS.model.Interview;
 import com.easwaran2506.IPMS.model.InterviewLog;
+import com.easwaran2506.IPMS.model.InterviewerList;
 import com.easwaran2506.IPMS.model.User;
 import com.easwaran2506.IPMS.welcomeScreen.WelcomeScreenView;
 import com.fasterxml.jackson.core.JsonGenerator;
@@ -30,6 +32,7 @@ public class InterviewDatabase {
     String filePathCandidate = "candidate.json";
     String filePathInterview = "interview.json";
     String filePathInterviewLog = "interviewLog.json";
+    String filePathCandidteRemarks = "candidateRemarks.json";
 
     int userType;
     int userId;
@@ -296,6 +299,28 @@ public class InterviewDatabase {
         }
     }
 
+    public List<InterviewLog> readInterviewLog(int interviewId) {
+        try {
+            List<InterviewLog> interviewlogList = new ArrayList<>();
+            List<InterviewLog> interviewlogList1 = new ArrayList<>();
+            File file = new File(filePathInterviewLog);
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            ObjectMapper mapper = new ObjectMapper();
+            interviewlogList = mapper.readValue(new File(filePathInterviewLog),
+                    new TypeReference<List<InterviewLog>>() {
+                    });
+            for (InterviewLog interviewLog : interviewlogList) {
+                if (interviewLog.getInterviewid() == interviewId)
+                    interviewlogList1.add(interviewLog);
+            }
+            return interviewlogList1;
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
     public boolean writeInterviewLog(List<InterviewLog> interviewLogList) {
         try {
             ObjectMapper mapper = new ObjectMapper();
@@ -311,4 +336,55 @@ public class InterviewDatabase {
             return false;
         }
     }
+
+    public List<User> readUser(int userCompany) {
+        try {
+            List<User> userList = new ArrayList<>();
+            List<User> userList1 = new ArrayList<>();
+            ObjectMapper mapper = new ObjectMapper();
+            userList1 = mapper.readValue(new File(filePathUser), new TypeReference<List<User>>() {
+            });
+            for (User user : userList1) {
+                if (user.getUserCompanyId() == userCompany)
+                    userList.add(user);
+            }
+            return userList;
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    public List<CandidateRemarks> readCandidateRemarks() {
+        try {
+            List<CandidateRemarks> candidateRemarksList = new ArrayList<>();
+            File file = new File(filePathCandidteRemarks);
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            ObjectMapper mapper = new ObjectMapper();
+            candidateRemarksList = mapper.readValue(new File(filePathInterviewLog),
+                    new TypeReference<List<CandidateRemarks>>() {
+                    });
+            return candidateRemarksList;
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    public boolean writeCandidateRemarks(List<CandidateRemarks> candidateRemarksList) {
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            File file = new File(filePathCandidteRemarks);
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            mapper.enable(SerializationFeature.INDENT_OUTPUT);
+            mapper.writeValue(file, candidateRemarksList);
+            return true;
+        } catch (Exception e) {
+            loginView.showAlert("Error Occured while assigning interviewer ...");
+            return false;
+        }
+    }
+
 }

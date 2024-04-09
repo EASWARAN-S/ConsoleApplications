@@ -2,8 +2,7 @@ package com.easwaran2506.IPMS.model;
 
 public class CandidateRemarks {
     private int remarksSid;
-    private int interviewId;
-    private int candidateId;
+    private int interviewLogId;
     private int interviewerId;
     private String remarks;
     private int scores;
@@ -16,20 +15,12 @@ public class CandidateRemarks {
         this.remarksSid = remarksSid;
     }
 
-    public int getInterviewId() {
-        return this.interviewId;
+    public int getInterviewLogId() {
+        return this.interviewLogId;
     }
 
-    public void setInterviewId(int interviewId) {
-        this.interviewId = interviewId;
-    }
-
-    public int getCandidateId() {
-        return this.candidateId;
-    }
-
-    public void setCandidateId(int candidateId) {
-        this.candidateId = candidateId;
+    public void setInterviewLogId(int interviewLogId) {
+        this.interviewLogId = interviewLogId;
     }
 
     public int getInterviewerId() {
@@ -54,6 +45,11 @@ public class CandidateRemarks {
 
     public void setScores(int scores) {
         this.scores = scores;
+    }
+
+    public int readCandidateRemarks() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'readCandidateRemarks'");
     }
 
 }

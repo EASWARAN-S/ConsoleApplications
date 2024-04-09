@@ -8,10 +8,12 @@ import com.easwaran2506.IPMS.dataLayer.InterviewDatabase;
 import com.easwaran2506.IPMS.login.LoginView;
 import com.easwaran2506.IPMS.maven.demo.src.main.java.com.example.interviewManagement;
 import com.easwaran2506.IPMS.model.Company;
+import com.easwaran2506.IPMS.welcomeScreen.WelcomeScreenView;
 
 public class CompanyView {
     private CompanyModel companyModel;
     private LoginView loginView = new LoginView();
+    private WelcomeScreenView welcomeScreenView = new WelcomeScreenView();
 
     public CompanyView() {
         companyModel = new CompanyModel(this);
@@ -34,7 +36,7 @@ public class CompanyView {
                 displayCompanyInfo();
                 break;
             case 3:
-                InterviewDatabase.getInstance().welcomeScreenView.init();
+                welcomeScreenView.init();
                 break;
 
             default:
@@ -81,16 +83,5 @@ public class CompanyView {
         init();
     }
 
-    // private void checkForAddNewCompany() {
-    // System.out.println("\nDo you want to add Company? \nType Yes/No");
-    // String choice = sc.next();
-    // if (choice.equalsIgnoreCase("yes")) {
-    // addCompany();
-    // } else if (choice.equalsIgnoreCase("no")) {
-    // init();
-    // } else {
-    // System.out.println("\nInvalid choice, Please enter valid choice.\n");
-    // checkForAddNewCompany();
-    // }
-    // }
+
 }

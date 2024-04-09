@@ -4,6 +4,15 @@ public class InterviewLog {
     private int interviewlogid;
     private int interviewid;
     private int candidateid;
+    private String currentStatus;
+
+    public String getCurrentStatus() {
+        return currentStatus;
+    }
+
+    public void setCurrentStatus(String currentStatus) {
+        this.currentStatus = currentStatus;
+    }
 
     public int getInterviewlogid() {
         return this.interviewlogid;

@@ -1,0 +1,19 @@
+[ {
+  "remarksSid" : 1,
+  "interviewLogId" : 1,
+  "interviewerId" : 2,
+  "remarks" : null,
+  "scores" : 0
+}, {
+  "remarksSid" : 1,
+  "interviewLogId" : 2,
+  "interviewerId" : 4,
+  "remarks" : null,
+  "scores" : 0
+}, {
+  "remarksSid" : 1,
+  "interviewLogId" : 3,
+  "interviewerId" : 4,
+  "remarks" : null,
+  "scores" : 0
+} ]

@@ -6,4 +6,12 @@
   "interviewRole" : "Developer",
   "individualScoreLimit" : 600,
   "noOfInterviewers" : 5
+}, {
+  "interviewId" : 2,
+  "interviewDate" : "28-06-2024",
+  "interviewtime" : "11:00:00",
+  "companyId" : 2,
+  "interviewRole" : "Developer",
+  "individualScoreLimit" : 600,
+  "noOfInterviewers" : 5
 } ]

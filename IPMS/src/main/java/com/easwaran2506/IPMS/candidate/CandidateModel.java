@@ -55,10 +55,12 @@ public class CandidateModel {
             interviewLog.setInterviewid(interviewId);
             interviewLog.setInterviewlogid(interviewlogid);
             interviewLogList.add(interviewLog);
+            InterviewDatabase.getInstance().loginView.showAlert("Application Submitted Successfully");
             return InterviewDatabase.getInstance().writeInterviewLog(interviewLogList);
 
         } else {
             InterviewDatabase.getInstance().loginView.showAlert("Already Applied");
+            InterviewDatabase.getInstance().loginView.showAlert("No Interviews Found");
             return false;
         }
 
